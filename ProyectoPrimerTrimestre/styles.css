@@ -1,51 +1,50 @@
-html {
-    -webkit-text-size-adjust:100%;
-    -ms-text-size-adjust:100%;
-    font:100% sans-serif;
-    box-sizing:border-box;
-    line-height:1.5
+.header_anthonys-logo {
+    width: 150px; 
+    height: 150px;
 }
-body {
-    margin:0;
-    background:#fff;
-    color:#111;
-    min-height:100%;
-    margin:0
+
+li{
+    list-style-type: none;
 }
-.header {
-    display:flex;
-    flex-direction:column-reverse;
-    position:relative;
-    min-height:4rem;
-    flex:1 0 auto
+
+.menuHeader {
+    background-color: white;
+    height: 200px;
+    display: inline-block;
+    margin: auto;
 }
-.header_main_nav {
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:-100%;
-    transform:none;
-    border-right:1px solid #ccc;
-    display:flex;
-    flex-direction:column;
-    width:calc(100% - 64px);
-    z-index:101;
-    transition:transform ease-in-out .3s
-   }
-.header_main_nav.active {
-    transform:translate(calc(100% + 64px), 0);
-    background:#0058a3
-   }
-   @media (min-width: 62rem) {
-    .header_main_nav {
-     background:#fff;
-     display:inline-block;
-     flex-grow:1;
-     position:static;
-     width:auto;
-     border:0;
-     z-index:0;
-     transform:none;
-     transform:none
-    }
+
+.logo {
+    float: left;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    background-color:white;
+    text-align: center;
+    overflow: hidden;
+    margin: 0px auto;
+    float: right;
+    justify-content: space-around;
+}
+
+.nav ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav ul li {
+    float: left;
+    margin-top: 20px;
+}
+
+.nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px; 
 }
