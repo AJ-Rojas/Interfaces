@@ -1,3 +1,12 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .header_anthonys-logo {
     width: 150px; 
     height: 150px;
@@ -9,9 +18,10 @@ li{
 
 .menuHeader {
     background-color: white;
-    height: 200px;
     display: inline-block;
     margin: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .logo {
@@ -47,4 +57,30 @@ li{
     text-decoration: none;
     font-size: 20px;
     padding: 20px; 
+}
+
+hr {
+    margin: auto;
+}
+
+.busqueda {
+   margin: auto;
+   padding: 10px;
+   width: auto;
+}
+    
+.finder {
+    margin: auto;
+    width: auto;
+}
+
+.search {
+    margin: auto;
+    width: 100%;
+}
+
+.fa.fa-angle-down {
+    color: black;
+    font-size: 24px;
+
 }
