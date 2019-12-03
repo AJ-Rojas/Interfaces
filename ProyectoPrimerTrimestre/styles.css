@@ -77,10 +77,33 @@ hr {
 .search {
     margin: auto;
     width: 100%;
+    border-radius: 5px;
 }
 
-.fa.fa-angle-down {
-    color: black;
+.fa {
+    color: red;
     font-size: 24px;
 
+}
+
+.content {
+    margin: auto;
+    padding-top: 10px;
+}
+
+.banner {
+    border: 2px solid black;
+    margin: auto;
+    width: auto;
+}
+
+.productos {
+    border: 2px solid black;
+    margin: auto;
+    width: auto;
+}
+
+.products {
+    margin: auto;
+    padding-top: 10px;
 }
