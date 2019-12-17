@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Log In</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="logInStyle.css">
+        <link rel="icon" type="image/png" href="logoPagina.jpg" sizes="64x64">
+    </head>
+    <body>
+      <section class="forms-section">
+          <a class="header_logo" href="index.html">
+              <img class="header_anthonys-logo" src="logoPagina.jpg" alt="Anthony's tienda online: Sofás, colchones, decoración y muebles para tu dormitorio, salón, baño y cocina. ¡Diseño y decoración para todos!" title="Anthony's tienda online: Sofás, colchones, decoración y muebles para tu dormitorio, salón, baño y cocina. ¡Diseño y decoración para todos!">
+          </a>
+        <h1 class="section-title">Bienvenido a Anthony's</h1>
+        <div class="forms">
+          <div class="form-wrapper is-active">
+            <button type="button" class="switcher switcher-login">
+              Inicia Sesion
+              <span class="underline"></span>
+            </button>
+            <form class="form form-login">
+              <fieldset>
+                <div class="input-block">
+                  <label for="login-email">E-mail</label>
+                  <input id="login-email" type="email" required>
+                </div>
+                <div class="input-block">
+                  <label for="login-password">Contraseña</label>
+                  <input id="login-password" type="password" required>
+                </div>
+              </fieldset>
+              <button type="submit" class="btn-login">Login</button>
+            </form>
+          </div>
+          <div class="form-wrapper">
+            <button type="button" class="switcher switcher-signup">
+              Registrate
+              <span class="underline"></span>
+            </button>
+            <form class="form form-signup">
+              <fieldset>
+                <div class="input-block">
+                    <label for="signup-nombre-confirm">Nombre Usuario</label>
+                    <input id="signup-nombre-confirm" type="text" required>
+                </div>
+                <div class="input-block">
+                  <label for="signup-email">E-mail</label>
+                  <input id="signup-email" type="email" required>
+                </div>
+                <div class="input-block">
+                  <label for="signup-password">Contraseña</label>
+                  <input id="signup-password" type="password" required>
+                </div>
+                <div class="input-block">
+                  <label for="signup-password-confirm">Confirmar Contraseña</label>
+                  <input id="signup-password-confirm" type="password" required>
+                </div>
+              </fieldset>
+              <button type="submit" class="btn-signup">Continuar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <script>
+        const switchers = [...document.querySelectorAll('.switcher')]
+
+        switchers.forEach(item => {
+	      item.addEventListener('click', function() {
+		    switchers.forEach(item => item.parentElement.classList.remove('is-active'))
+		    this.parentElement.classList.add('is-active')
+	        })
+        })
+      </script>
+    </body>
+</html>

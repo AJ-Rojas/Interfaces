@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Anthony's Furniture</title>
+        <meta name="description" content="Anthony's tienda online: Sofás, colchones, decoración y muebles para tu dormitorio, salón, baño y cocina. ¡Diseño y decoración para todos!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="contactoStyle.css">
+        <link rel="icon" type="image/png" href="logoPagina.jpg" sizes="64x64">
+        <script src="responsive.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <a class="header_logo" href="index.html">
+                    <img class="header_anthonys-logo" src="logoPagina.jpg" alt="Anthony's tienda online: Sofás, colchones, decoración y muebles para tu dormitorio, salón, baño y cocina. ¡Diseño y decoración para todos!" title="Anthony's tienda online: Sofás, colchones, decoración y muebles para tu dormitorio, salón, baño y cocina. ¡Diseño y decoración para todos!">
+                </a>
+              <h2>Contacta con Nosotros</h2>
+              <p></p>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="img/mapa.PNG" style="width:100%">
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="fname">Nombre</label>
+                  <input type="text" id="fname" name="firstname">
+                  <label for="lname">Apellidos</label>
+                  <input type="text" id="lname" name="lastname">
+                  <label for="country">Provincia</label>
+                  <select id="country" name="country">
+                    <option value="sevilla">Sevilla</option>
+                    <option value="granada">Granada</option>
+                    <option value="malaga">Malaga</option>
+                    <option value="huelva">Huelva</option>
+                    <option value="jaen">Jaen</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="almeria">Almeria</option>
+                    <option value="cadiz">Cádiz</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea class="subject" name="subject"></textarea>
+                  <input type="submit" value="Enviar">
+                </form>
+              </div>
+            </div>
+          </div>        
+    </body>
+</html>
